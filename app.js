@@ -1,7 +1,6 @@
-
 // 4.1 Número mayor
 
-function mayor() {
+const mayor = () => {
 
   const n1 = parseInt(document.getElementById("num1").value);
   const n2 = parseInt(document.getElementById("num2").value);
@@ -15,13 +14,12 @@ function mayor() {
   } else {
     res.innerText = "Los dos números son iguales";
   }
-}
-
+};
 
 
 // 4.2 Nivel experiencia
 
-function nivel() {
+const nivel = () => {
 
   const nombre = document.getElementById("nombre").value;
   const años = parseInt(document.getElementById("años").value);
@@ -36,12 +34,12 @@ function nivel() {
 
   document.getElementById("res2").innerText =
     nombre + " tiene nivel: " + nivel;
-}
+};
 
 
 // 4.3 Palabra bonita
 
-function bonita() {
+const bonita = () => {
 
   const palabra = document.getElementById("palabra").value;
 
@@ -56,13 +54,12 @@ function bonita() {
   } else {
     res.innerText = "La palabra no es considerada bonita.";
   }
-}
-
+};
 
 
 // 4.4 Número a letras
 
-function convertir() {
+const convertir = () => {
 
   const num = parseInt(document.getElementById("numero").value);
 
@@ -78,4 +75,4 @@ function convertir() {
   } else {
     res.innerText = "Número inválido (0-10)";
   }
-}
+};
